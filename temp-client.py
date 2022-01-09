@@ -3,7 +3,7 @@ import websockets
 import json
 
 async def client():
-    uri = "ws://localhost:42423"
+    uri = "ws://hammywebserver.duckdns.org:42423"
     async with websockets.connect(uri) as websocket:
         # Allow user to enter username into command line
         username = input("Enter a username: ")

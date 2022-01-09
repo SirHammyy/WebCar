@@ -1,4 +1,4 @@
-var wsUri = "ws://localhost:42423";
+var wsUri = "ws://10.10.20.50:42422";
 var output;
 var forwardBtn, leftBtn, rightBtn, reverseBtn, stopBtn;
 var websocket;
@@ -64,7 +64,6 @@ function connectWebSocket() {
 
 function onOpen(evt) {
     writeToScreen("CONNECTED");
-    doSend("WebSocket rocks");
 }
 
 function onMessage(evt) {
