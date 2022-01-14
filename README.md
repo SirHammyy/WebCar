@@ -4,3 +4,5 @@ This is a web application to allow control over a Arduino-based, wifi-connected 
 The web app uses TypeScript and Python and operates through WebSockets.
 
 The car was built with an ESP8266 NodeMCU module and put on a 3d-printed chassis, pictured below.
+
+Control the car here: hammywebserver.duckdns.org/drive.html
