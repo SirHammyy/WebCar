@@ -1,4 +1,4 @@
-var wsUri = "ws://10.10.20.50:42422";
+var wsUri = "ws://hammywebserver.duckdns.org:42422";
 var output;
 var forwardBtn, leftBtn, rightBtn, reverseBtn, stopBtn;
 var websocket;

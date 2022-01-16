@@ -5,10 +5,14 @@ def new_client(client, server):
     print("New connection from: " + str(client['address'][0]) + ":" + str(client['address'][1]))
 
 def recieve_message(client, server, message):
-    if client['address'][0] != '10.10.20.107':
+    if message == 'esp8266 Connected':
+        client['id'] = 999
+
+
+    if client['id'] != 999:
         carClient = None
         for oneClient in server.clients:
-            if oneClient["id"][0] == '10.10.20.107':
+            if oneClient['id'] == 999:
                 carClient = oneClient
                 break
         if carClient is not None:
